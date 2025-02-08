@@ -10,3 +10,25 @@
     font-weight: 600;
     font-style: normal, italic;
 } */
+* {
+    h1 {
+        font-family: "Chivo", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    h2 {
+        font-family: "Chivo", serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    p, button {
+        font-family: "Roboto", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+header {
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+}
