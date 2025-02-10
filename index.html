@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/fca23f0df2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -46,14 +48,11 @@
                 <li>
                     <a href="#">Github</a>
                 </li>
-                <li>
-                    <a href="#">Source code</a>
-                </li>
             </socials>
         </nav>
     </header>
     <main>
-        <section id="info">
+        <info id="info">
             <h1>Info</h1>
             <p>Description</p>
             <ul>
@@ -64,23 +63,90 @@
                     <p>Second item in the first list</p>
                 </li>
             </ul>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Showcase your projects here.</p>
-        </section>
-        <section id="resume">
+        </info>
+        <projects id="projects">
+            <div class="left-lean">
+                <picture>
+                    <source srcset="">
+                    <img src="Images/landscape-placeholder.svg" alt="Description of image">
+                </picture>
+                <div class="left-lean-content">
+                    <h2>YT2MP4 - React + Vite + Flask</h2>
+                    <p>This is a website that runs yt_dlp as a python backend. Flask is used to run the python code 
+                        as a server, Vite React and typescript were used to make the frontend. The site is a work in progress,
+                        but the Gitub is public to see. </p>
+                    <p><i class="fa-solid fa-tag"></i> Personal</p>
+                </div>
+            </div>
+            <div class="right-lean">
+                <picture>
+                    <source srcset="">
+                    <img src="Images/landscape-placeholder.svg" alt="Description of image">
+                </picture>
+                <div class="right-lean-content">
+                    <h2>Archy’s Arcade - Figma</h2>
+                    <p>This is a playable Figma prototype of a banking-like app for tokens and tickets for a Arcade. 
+                        This shows my UX and UI design for making mobile prototypes, more so focused on my
+                        Front end design skills. </p>
+                    <p><i class="fa-solid fa-tag"></i> School</p>
+                </div>
+            </div>
+            <div class="left-lean">
+                <picture>
+                    <source srcset="">
+                    <img src="Images/landscape-placeholder.svg" alt="Description of image">
+                </picture>
+                <div class="left-lean-content">
+                    <h2>Animated Navbar - Ruby on Rails, HTML, SCSS</h2>
+                    <p> A Navbar I made for my job, it’s an animated navbar that plays a gradient fill animation 
+                        when hovered. It can also collapse into a hamburger menu with the help of Bootstrap 5, keeping the
+                        animated fill on both desktop and mobile.</p>
+                    <p><i class="fa-solid fa-tag"></i> Work</p>
+                </div>
+            </div>
+            <div class="right-lean">
+                <picture>
+                    <source srcset="">
+                    <img src="Images/landscape-placeholder.svg" alt="Description of image">
+                </picture>
+                <div class="right-lean-content">
+                    <h2>Card Randomizer - Godot 3.5 and GDscript</h2>
+                    <p>
+                        A basic randomizer for a small tarot web game I made, it picks a random 
+                        number, and the 
+                        game renders the card associated with that number from an external resource 
+                        menu. This shows a 
+                        bit of my Game Development knowledge and my approach to making interactive experiences.</p>
+                    <p><i class="fa-solid fa-tag"></i> Personal</p>
+                </div>
+            </div>
+            <div class="left-lean">
+                <picture>
+                    <source srcset="">
+                    <img src="Images/landscape-placeholder.svg" alt="Description of image">
+                </picture>
+                <div class="left-lean-content">
+                    <h2> React Navigation - Vite + React Typescript</h2>
+                    <p>A simple code snippet of the Routes system where clicking on a link doesn’t load another 
+                        page but renders in a new script and environment, making the switch seamless. This is a 
+                        fun little feature of React and shows its ability to render different pages in a unique way.</p>
+                    <p><i class="fa-solid fa-tag"></i> Personal</p>
+                </div>
+            </div>
+        </projects>
+        <resume id="resume">
             <h2>Resume</h2>
             <button>placeholder</button>
             <button>placeholder</button>
-        </section>
-        <section id="contact">
+        </resume>
+        <contact id="contact">
             <h2>Contact</h2>
             <p>Form and Options Here</p>
-        </section>
+        </contact>
+        <footer>
+            <p>&copy; 2025 Judah Free. All rights reserved.</p>
+            <a href="#">Source code</a>
+        </footer>
     </main>
-    <footer>
-        <p>&copy; 2025 Judah Free. All rights reserved.</p>
-    </footer>
 </body>
 </html>
