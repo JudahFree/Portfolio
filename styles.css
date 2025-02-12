@@ -1,3 +1,4 @@
+/* #FCF1C7 #B4A15A #451C7F #5F4179 */
 html {
     scroll-behavior: smooth;
 }  
@@ -31,21 +32,33 @@ header {
     top: 0;
     height: 100vh;
     width: 45%;
-    background-color: #f8f9fa;
+    background-color: #fffbeb;
     padding: 1rem;
     overflow-y: auto;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    a {
+        text-decoration: none;
+    }
+    li {
+        text-decoration: none;
+        list-style: none;
+    }
+    h5 {
+        text-decoration: underline;
+        opacity: 0.8;
+    }
 }
 main {
     flex-grow: 1;
     padding: 1rem;
-    background-color: #ffffff;
+    background-color: #fffcee;
 }
 footer {
     background-color: #f1f1f1;
     padding: 1rem;
     margin-left: -1rem;
     margin-right: -1rem;
+    margin-bottom: -1rem;
     box-sizing: border-box;
     text-align: center;
 }
@@ -93,6 +106,7 @@ picture img {
     width: 300px;
     height: auto;
     object-fit: cover;
+    border: 5px solid #5F4179;
 }
 .wrapper {
     display: flex;
@@ -121,8 +135,8 @@ picture img {
 #logo {
     width: 200px;
     height: auto;
-    border: 5px solid; 
+    border: 5px solid #451C7F; 
     border-radius: 50%;
-  }
+}
   
   
