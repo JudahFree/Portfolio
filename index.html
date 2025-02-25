@@ -24,47 +24,48 @@
             <nav>
                 <h5>Navigation</h5>
                 <li>
-                    <a href="#info">Info</a>
+                    <h2><i class="fa-solid fa-house"></i> <a href="#info">Info</a></h2>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <h2><i class="fa-solid fa-folder"></i> <a href="#projects">Projects</a></h2>
                 </li>
                 <li>
-                    <a href="#resume">Resume</a>
+                    <h2><i class="fa-solid fa-briefcase"></i> <a href="#resume">Resume</a></h2>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <h2><i class="fa-solid fa-message"></i> <a href="#contact">Contact</a></h2>
                 </li>
             </nav>
             <socials>
                 <h5>Socials</h5>
                 <li>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <h2><a href=""><i class="fa-brands fa-linkedin"></i></a></h2>
                 </li>
                 <li>
-                    <a href=""><i class="fa-brands fa-bluesky"></i></a>
+                    <h2><a href=""><i class="fa-brands fa-bluesky"></i></a></h2>
                 </li>
                 <li>
-                    <a href=""><i class="fa-brands fa-tumblr"></i></a>
+                    <h2><a href=""><i class="fa-brands fa-tumblr"></i></a></h2>
                 </li>
                 <li>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <h2><a href=""><i class="fa-brands fa-github"></i></a></h2>
                 </li>
             </socials>
         </wrapper>
     </header>
     <main>
         <info id="info">
-            <h1>Info</h1>
-            <p>Description</p>
-            <ul>
-                <li>
-                    <p>First item in the first list</p>
-                </li>
-                <li>
-                    <p>Second item in the first list</p>
-                </li>
-            </ul>
+            <div class="wrap-1">
+                <h1>Judah Free</h1>
+                <picture>
+                    <source srcset="">
+                    <img src="Images/Pfp.png" alt="Profile Picture">
+                </picture>
+            </div>
+            <div class="wrap-2">
+                <h5>Full-Stack Web Developer with a Engineering and Graphic design background.</h5>
+                <p>Wake Technical Community College</p>
+                <p>Baele Street Software</p>
         </info>
         <projects id="projects">
             <div class="left-lean">
@@ -143,7 +144,13 @@
         </resume>
         <contact id="contact">
             <h2>Contact</h2>
-            <p>Form and Options Here</p>
+            <form>
+                <input type="text" id="title" name="title" placeholder="Subject Line"><br><br>
+                <input type="email" id="email" name="email" placeholder="Your Email"><br><br>
+                <textarea id="message" name="message" rows="10" cols="50" placeholder="Your Message"></textarea><br><br>
+                <input type="submit" value="Send">
+              </form>
+              
         </contact>
         <footer>
             <p>&copy; 2025 Judah Free. All rights reserved.</p>
