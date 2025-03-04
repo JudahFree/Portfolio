@@ -30,9 +30,37 @@ body {
     display: flex;
     margin: 0;
 }
-header {
-    display: block;
+#header {
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #451C7F;
+    padding: 1.1rem;
+    overflow: hidden;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    li {
+        text-decoration: none;
+        list-style: none;
+        padding-bottom: 5px;
+        color: white;
+    }
+    h1 {
+        color: #FCF1C7;
+    }
+    h5 {
+        text-decoration: underline;
+        opacity: 0.5;
+        color: #FCF1C7;
+    }
+}
+.offcanvas-lg {
+    margin: 0;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -41,81 +69,21 @@ header {
     padding: 1.1rem;
     overflow: hidden;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    a {
-        text-decoration: none;
-        color: white;
-    }
-    li {
-        text-decoration: none;
-        list-style: none;
-        padding-bottom: 5px;
-        color: white;
-    }
-    h1 {
-        color: #FCF1C7;
-    }
-    h5 {
-        text-decoration: underline;
-        opacity: 0.5;
-        color: #FCF1C7;
-    }
-}
-.offcanvas {
-    width: 5rem;
-    height: auto;
-    background-color: #451C7F;
 }
 .offcanvas-body {
-    width: 5rem;
-    height: auto;
-    background-color: #451C7F;
-    padding: 1.1rem;
-    overflow: hidden;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     padding: 0;
-    a {
-        text-decoration: none;
-        color: white;
-    }
-    li {
-        text-decoration: none;
-        list-style: none;
-        padding-bottom: 5px;
-        color: white;
-    }
-    h1 {
-        color: #FCF1C7;
-    }
-    h5 {
-        text-decoration: underline;
-        opacity: 0.5;
-        color: #FCF1C7;
-    }
+    border: none;
+    overflow: hidden;
 }
 .offcanvas-header {
     background-color: #FCF1C7;
-    padding: 1rem;
     border-bottom: 1px solid #451C7F;
-    button {
-        background-color: transparent;
-        border: none;
-        color: #FCF1C7;
-        font-size: 1rem;
-        cursor: pointer;
-        :hover {
-            color: #FCF1C7;
-        }
-    }
 }
-#toggle-button {
-    position: fixed;
-    top: 10px;
-    left: 10px;
+.btn-close {
     background-color: transparent;
-    color: #451C7F;
     border: none;
-    padding: 10px;
-    font-size: 24px;
+    color: white;
+    font-size: 1rem;
     cursor: pointer;
 }
 main {
@@ -245,13 +213,4 @@ footer {
         rotate: -10deg;
     }
 }
-@media (max-width: 992px) {
-    #header {
-        display: none;
-    }
-    #toggle-button {
-        display: block;
-    }
-}
-
   
