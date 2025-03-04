@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="header">
         <wrapper>
             <top>
                 <picture>
@@ -53,7 +53,17 @@
             </socials>
         </wrapper>
     </header>
+    <div id="offcanvas" class="offcanvas offcanvas-start">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="offcanvas-body">
+        </div>
+    </div>
     <main>
+        <button id="toggle-button" class="d-block d-lg-none">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <info id="info">
             <div class="wrap-1">
                 <h1>Judah Free</h1>
@@ -167,5 +177,6 @@
             <a href="https://github.com/JudahFree/JudahPortfolio">Source code <i class="fa-solid fa-link"></i></a>
         </footer>
     </main>
+    <script src="extension.js" defer></script>
 </body>
 </html>

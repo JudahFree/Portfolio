@@ -31,6 +31,7 @@ body {
     margin: 0;
 }
 header {
+    display: block;
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -58,6 +59,61 @@ header {
         opacity: 0.5;
         color: #FCF1C7;
     }
+}
+.offcanvas {
+    width: 600px;
+    height: 100vh;
+    background-color: #451C7F;
+    padding: 1.1rem;
+    overflow: hidden;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.offcanvas-body {
+    padding: 0;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    li {
+        text-decoration: none;
+        list-style: none;
+        padding-bottom: 5px;
+        color: white;
+    }
+    h1 {
+        color: #FCF1C7;
+    }
+    h5 {
+        text-decoration: underline;
+        opacity: 0.5;
+        color: #FCF1C7;
+    }
+}
+.offcanvas-header {
+    background-color: #451C7F;
+    padding: 1rem;
+    border-bottom: 1px solid #451C7F;
+    button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        :hover {
+            color: #FCF1C7;
+        }
+    }
+}
+#toggle-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    color: #451C7F;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
 }
 main {
     flex-grow: 1;
@@ -186,5 +242,13 @@ footer {
         rotate: -10deg;
     }
 }
-  
+@media (max-width: 992px) {
+    #header {
+        display: none;
+    }
+    #toggle-button {
+        display: block;
+    }
+}
+
   
