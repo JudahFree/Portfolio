@@ -1,7 +1,7 @@
 const header = document.getElementById('header');
 const offcanvasBody = document.getElementById('offcanvas-body');
 const toggleButton = document.getElementById('toggle-button');
-const offcanvas = document.getElementById('offcanvas');
+const offcanvas = document.getElementById('offcanvasHeader');
 
 const clone = header.cloneNode(true);
 offcanvasBody.appendChild(clone);
@@ -14,8 +14,3 @@ document.querySelector('.btn-close').addEventListener('click', () => {
     offcanvas.classList.remove('show');
 });
 
-document.addEventListener('click', (e) => {
-    if (e.target !== offcanvas && e.target !== toggleButton && !offcanvas.contains(e.target)) {
-        offcanvas.classList.remove('show');
-    }
-});

@@ -53,15 +53,16 @@
             </socials>
         </wrapper>
     </header>
-    <div id="offcanvas" class="offcanvas offcanvas-start">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasHeader" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-            <button type="button" class="btn-close text-reset" aria-label="Close"></button>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body" id="offcanvas-body">
+        <div id="offcanvas-body">
         </div>
-    </div>
+      </div>
     <main>
-        <button id="toggle-button" class="d-block d-lg-none">
+        <button class="d-block d-lg-none" id="toggle-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasExample">
             <i class="fa-solid fa-bars"></i>
         </button>
         <info id="info">
