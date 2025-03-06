@@ -30,22 +30,36 @@ body {
     display: flex;
     margin: 0;
 }
+.offcanvas-lg, .offcanvas-body, #header, wrapper, top, nav, socials {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+.offcanvas-lg {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 600px;
+    background-color: #451C7F;
+    overflow: hidden;
+}
+.offcanvas-body {
+    overflow: hidden; 
+}
 #header {
-    padding: 1rem;
+    padding: 1rem; 
     position: sticky;
     top: 0;
     height: 100vh;
     width: 100%;
     background-color: #451C7F;
-    padding: 1.1rem;
-    overflow: hidden;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     a {
         text-decoration: none;
         color: white;
     }
     li {
-        text-decoration: none;
         list-style: none;
         padding-bottom: 5px;
         color: white;
@@ -58,22 +72,6 @@ body {
         opacity: 0.5;
         color: #FCF1C7;
     }
-}
-.offcanvas-lg {
-    margin: 0;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    width: 600px;
-    background-color: #451C7F;
-    padding: 1.1rem;
-    overflow: hidden;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-}
-.offcanvas-body {
-    padding: 0;
-    border: none;
-    overflow: hidden;
 }
 .offcanvas-header {
     background-color: #FCF1C7;
@@ -213,4 +211,14 @@ footer {
         rotate: -10deg;
     }
 }
-  
+@media (max-width: 1072px) {
+    .offcanvas-lg {
+        width: 100%; 
+        height: 100vh; 
+        margin: 0; 
+        padding: 0; 
+    }
+    .offcanvas-body {
+        padding: 1rem; 
+    }
+}
