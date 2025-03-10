@@ -54,14 +54,10 @@ body {
     .nav-link {
         cursor: pointer;
         transition: opacity 0.2s;
-        
         &:hover {
             opacity: 0.8;
         }
     }
-}
-.offcanvas-body, body.offcanvas-active {
-    overflow: hidden; 
 }
 #header {
     padding: 1rem; 
