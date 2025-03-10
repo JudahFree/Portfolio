@@ -48,8 +48,19 @@ body {
     width: 600px;
     background-color: #451C7F;
     overflow: hidden;
+    &.show {
+        overflow-y: auto;
+    }
+    .nav-link {
+        cursor: pointer;
+        transition: opacity 0.2s;
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 }
-.offcanvas-body {
+.offcanvas-body, body.offcanvas-active {
     overflow: hidden; 
 }
 #header {
@@ -92,6 +103,9 @@ body {
 main {
     flex-grow: 1;
     padding: 5rem;
+    width: min(90%, 1200px);
+    margin: 0 auto;
+    padding: clamp(1rem, 3vw, 2rem);
     background-color: #fffcee;
 }
 footer {
@@ -206,7 +220,7 @@ footer {
     }
     .list-item {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 0.5rem;
     }
     #info-pic img{
@@ -216,11 +230,89 @@ footer {
         rotate: -10deg;
     }
 }
+.wrap-2 {
+    h5 {
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.resume-btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+#info-pic {
+    top: 1rem;
+    right: 4rem;
+    z-index: 1000;
+    img {
+        width: 60px;
+        height: auto;
+        rotate: -10deg;
+    }
+}
+#contact form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    input, textarea {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
 @media (max-width: 992px) {
+    main {
+        width: 95%;
+        padding: clamp(0.8rem, 2vw, 1.5rem);
+        h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
+        h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); }
+        p { 
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            max-width: 65ch;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        section {
+            margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+            padding: clamp(0.8rem, 2vw, 1.5rem);
+        }
+    }
+    .left-lean,
+    .right-lean {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        h2 { 
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            text-align: center;
+        }
+        p {
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            text-align: center;
+            max-width: 65ch;
+            margin: 0 auto;
+        }
+        picture img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
     /* Navigation */
     .offcanvas-lg {
         position: fixed;
-        width: 100%;
+        width: 90%;
         margin: 0;
         padding: 0;
         border: none;
@@ -242,5 +334,69 @@ footer {
     .offcanvas-backdrop {
         background-color: rgba(0, 0, 0, 0.5);
     }
+    /* Main */
+    .wrap-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        h5 {
+            font-size: 0.9rem;
+            padding: 0 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            max-width: 800px;
+        }
+    }
+    .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0 1rem;
+        width: 100%;
+    }
+    .resume-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    #info-pic {
+        right: 1rem;
+        img {
+            width: 10px;
+        }
+    }
+    #contact form {
+        padding: 0 1rem;
+    }
 }
+@media (max-width: 576px) {
+    main {
+        width: 100%;
+        padding: 1rem;
+        h1 { font-size: 1.8rem; }
+        h2 { font-size: 1.4rem; }
+        p { 
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        section {
+            margin-bottom: 1.5rem;
+            padding: 0.8rem;
+        }
+    }
+    .left-lean,
+    .right-lean {
+        h2 { 
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 0.9rem;
+            padding: 0 1rem;
+        }
+        picture img {
+            max-width: 250px;
+        }
+    }
 }
