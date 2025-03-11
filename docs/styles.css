@@ -254,7 +254,8 @@ footer {
 #contact form {
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0rem;
     input, textarea {
         width: 100%;
         margin-bottom: 1rem;
@@ -361,6 +362,7 @@ footer {
         }
     }
     #contact form {
+        margin: 0 auto;
         padding: 0 1rem;
     }
 }
