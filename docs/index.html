@@ -65,7 +65,7 @@
         </div>
     </div>
     <main>
-        <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="fa-solid fa-bars"></i></button>
+        <!-- <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="fa-solid fa-bars"></i></button> -->
         <info id="info">
             <div class="wrap-1">
                 <h1>Judah Free</h1>
@@ -80,12 +80,12 @@
                     looking for a job in the tech industry, and I am open to any opportunities that come my way. </h5>
                 </h5>
                 <div class="list">
-                    <div class="list-item">
-                        <i class="fa-solid fa-school"></i><p>Wake Technical Community College</p>
-                    </div>
-                    <div class="list-item">
-                        <i class="fa-solid fa-briefcase"></i><p>Baele Street Software</p>
-                    </div>
+                    <a href="https://www.linkedin.com/company/beale-street-software/" target="_blank">
+                        <button class="list-item"><i class="fa-solid fa-school"></i><p>Wake Technical Community College</p></button>
+                    </a>
+                    <a href="https://www.linkedin.com/school/waketechcc/posts/?feedView=all" target="_blank">
+                        <button class="list-item"><i class="fa-solid fa-briefcase"></i><p>Baele Street Software</p></button>
+                    </a>
                 </div>
             </div>
         </info>
@@ -161,8 +161,14 @@
         </projects>
         <resume id="resume">
             <h2>Resume</h2>
-            <button>placeholder</button>
-            <button>placeholder</button>
+            <button onclick="window.open('Images/Resume.pdf', '_blank')">
+                <i class="fa-solid fa-globe"></i><p>View in Browser</p>
+            </button>
+            <a href="Images/Resume.pdf" download="JudahFree_Resume.pdf">
+                <button>
+                    <i class="fa-solid fa-circle-down"></i><p>Download PDF</p>
+                </button>
+            </a>
         </resume>
         <contact id="contact">
             <h2>Contact</h2>
@@ -176,6 +182,20 @@
         </contact>
         <footer>
             <p>&copy; 2025 Judah Free. All rights reserved.</p>
+            <div id="social-wrap">
+                <li>
+                    <h2><a href="www.linkedin.com/in/judahfree" target="_blank"><i class="fa-brands fa-linkedin"></i></a></h2>
+                </li>
+                <li>
+                    <h2><a href="https://bsky.app/profile/jfreedom907.bsky.social" target="_blank"><i class="fa-brands fa-bluesky"></i></a></h2>
+                </li>
+                <li>
+                    <h2><a href="www.tumblr.com/jfreedom907" target="_blank"><i class="fa-brands fa-tumblr"></i></a></h2>
+                </li>
+                <li>
+                    <h2><a href="https://github.com/JudahFree" target="_blank"><i class="fa-brands fa-github"></i></a></h2>
+                </li>
+            </div>
             <a href="https://github.com/JudahFree/JudahPortfolio">Source code <i class="fa-solid fa-link"></i></a>
         </footer>
     </main>
