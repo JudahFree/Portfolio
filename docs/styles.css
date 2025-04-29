@@ -239,12 +239,6 @@ footer {
         height: 2rem;
         padding: 0 1rem;
     }
-    #info-pic img{
-        width: 100px;
-        height: auto;
-        display: flex;
-        rotate: -10deg;
-    }
 }
 .wrap-2 {
     h5 {
@@ -273,16 +267,6 @@ button {
     font-size: 1.2rem;
     border-radius: 25px;
     border: 2px solid #451C7F;
-}
-#info-pic {
-    top: 1rem;
-    right: 4rem;
-    z-index: 1000;
-    img {
-        width: 60px;
-        height: auto;
-        rotate: -10deg;
-    }
 }
 #contact form {
     width: 100%;
@@ -401,21 +385,21 @@ button {
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
     }
-    #info-pic {
-        right: 1rem;
-        img {
-            width: 10px;
-        }
-    }
     #contact form {
         margin: 0 auto;
         padding: 0 1rem;
     }
 }
 @media (max-width: 576px) {
+    html, body {
+        overflow-x: hidden;
+        position: relative;
+        width: 100%;
+    }
     main {
         width: 100%;
         padding: 1rem;
+        box-sizing: border-box;
         h1 { font-size: 1.8rem; }
         h2 { font-size: 1.4rem; }
         p { 
@@ -442,5 +426,6 @@ button {
     }
     .list-item {
         height: fit-content;
+        margin: 1 auto;
     }
 }
