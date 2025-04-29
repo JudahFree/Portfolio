@@ -395,16 +395,9 @@ button {
     }
 }
 @media (max-width: 576px) {
-    html, body {
-        overflow-y: auto;
-        overflow-x: auto;
-        position: relative;
-        width: 100%;
-    }
     main {
         width: 100%;
         padding: 1rem;
-        box-sizing: border-box;
         h1 { font-size: 1.8rem; }
         h2 { font-size: 1.4rem; }
         p { 
