@@ -396,8 +396,8 @@ button {
 }
 @media (max-width: 576px) {
     html, body {
-        overflow-y: scroll;
-        overflow-x: hidden;
+        overflow-y: auto;
+        overflow-x: auto;
         position: relative;
         width: 100%;
     }
